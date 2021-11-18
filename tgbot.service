@@ -1,0 +1,14 @@
+[Unit]
+Description=Telegram Bot
+After=network.target
+
+[Service]
+User=tg_bot
+Group=tg_bot
+
+WorkingDirectory=/home/tg_bot/patreon_bot/
+Environment="PYTHONPATH=/home/tg_bot/patreon_bot/"
+ExecStart=/home/tg_bot/patreon_bot/.venv/bin/python /home/tg_bot/patreon_bot/bot.py
+
+[Install]
+WantedBy=multi-user.target
