@@ -3,12 +3,12 @@ Description=Telegram Bot
 After=network.target
 
 [Service]
-User=tg_bot
-Group=tg_bot
+User=patreon
+Group=patreon
 
-WorkingDirectory=/home/tg_bot/patreon_bot/
-Environment="PYTHONPATH=/home/tg_bot/patreon_bot/"
-ExecStart=/home/tg_bot/patreon_bot/.venv/bin/python /home/tg_bot/patreon_bot/bot.py
+WorkingDirectory=/home/patreon/patreon/
+Environment="PYTHONPATH=/home/patreon/patreon/"
+ExecStart=/home/patreon/patreon/.venv/bin/python /home/patreon/patreon/bot.py
 
 [Install]
 WantedBy=multi-user.target
