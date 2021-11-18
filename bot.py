@@ -295,10 +295,10 @@ Stay tuned!"""
                 fourth_link = await bot.create_chat_invite_link(lock_channel_id_4, member_limit=1, expire_date=timer)
 
                 keyboard = InlineKeyboardMarkup()
-                button = InlineKeyboardButton('USDT Futures', url=first_link.invite_link)
+                button = InlineKeyboardButton('EASY Investments', url=fourth_link.invite_link)
                 button_second = InlineKeyboardButton('USDT Investments', url=second_link.invite_link)
                 button_third = InlineKeyboardButton('BTC Investments', url=third_link.invite_link)
-                button_fourth = InlineKeyboardButton('EASY Investments', url=fourth_link.invite_link)
+                button_fourth = InlineKeyboardButton('USDT Futures', url=first_link.invite_link)
                 keyboard.add(button)
                 keyboard.add(button_second)
                 keyboard.add(button_third)
