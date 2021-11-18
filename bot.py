@@ -304,7 +304,7 @@ Stay tuned!"""
                 keyboard.add(button_third)
                 keyboard.add(button_fourth)
                 await bot.send_message(message.from_user.id, 'Please join to every private channel now👇🏼', reply_markup=keyboard)
-                db.register(message.from_user.id, message.text, 'channels')
+                db.register(message.from_user.id, message.text.lower(), 'channels')
                 await asyncio.sleep(120)
                 text = """
                 Thank you for joining.
